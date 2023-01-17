@@ -1,0 +1,25 @@
+.big-clock-face{
+    position: relative;
+    background: #282828;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+    &::after{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+.big-clock-face::after,
+.big-clock-face::before{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+  left: 49%;
+}

@@ -1,0 +1,22 @@
+.marking {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background: #fff;
+    z-index: 0;
+    left: 49%;
+
+    &-one{
+      transform: rotate(30deg);
+    }
+    &-two{
+      transform: rotate(60deg);
+    }
+    &-three{
+      transform: rotate(120deg);
+    }
+    &-four{
+      transform: rotate(150deg);
+    }
+}

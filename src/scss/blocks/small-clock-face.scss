@@ -1,0 +1,24 @@
+.small-clock-face {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    background: #252020;
+    border-radius: 100%;
+    z-index: 1;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 16px;
+      height: 16px;
+      border-radius: 18px;
+      margin-left: -9px;
+      margin-top: -6px;
+      background: #2f25a1;
+      z-index: 11;
+    }
+}

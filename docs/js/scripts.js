@@ -1,11 +1,15 @@
 //Reloj digital
 const hoursElement = document.getElementById('hours');
-const separatorElement = document.getElementById('separator');
 const minutesElement = document.getElementById('minutes');
 const weekDayElement = document.getElementById('week-day');
 const dayElement = document.getElementById('day');
 const monthElement = document.getElementById('month');
 const yearElement = document.getElementById('year');
+
+//Reloj analógico
+const hourHandElement = document.getElementById('hour-hand');
+const minuteHandElement = document.getElementById('minute-hand');
+const secondHandElement = document.getElementById('second-hand');
 
 const days = [
     'Monday',
@@ -49,6 +53,15 @@ const setClocks = () => {
     dayElement.textContent = date;
     monthElement.textContent = months[currentMonth];
     yearElement.textContent = currentYear;
+
+    const secondsDegrees = (seconds / 60) * 360 + 90;
+  secondHandElement.style.transform = `rotate(${secondsDegrees}deg)`;
+
+  const minutesDegrees = (minutes / 60) * 360 + (seconds / 60) * 6 + 90;
+  minuteHandElement.style.transform = `rotate(${minutesDegrees}deg)`;
+
+  const hourDegrees = (hours / 12) * 360 + (minutes / 60) * 30 + 90;
+  hourHandElement.style.transform = `rotate(${hourDegrees}deg)`;
 };
 
 setInterval(() => {

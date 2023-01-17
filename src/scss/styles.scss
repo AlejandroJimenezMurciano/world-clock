@@ -3,4 +3,10 @@
 @use 'config/variables.scss';
 @use 'blocks/body.scss';
 @use 'blocks/main.scss';
-@use 'blocks/buttons.scss';
+@use 'blocks/big-clock-face.scss';
+@use 'blocks/digital-clock.scss';
+@use 'blocks/clocks-container.scss';
+@use 'blocks/analogic-clock.scss';
+@use 'blocks/small-clock-face.scss';
+@use 'blocks/marking.scss';
+@use 'blocks/hand.scss';
