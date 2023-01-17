@@ -54,7 +54,7 @@ const setClocks = () => {
     monthElement.textContent = months[currentMonth];
     yearElement.textContent = currentYear;
 
-    const secondsDegrees = (seconds / 60) * 360 + 90;
+  const secondsDegrees = (seconds / 60) * 360 + 90;
   secondHandElement.style.transform = `rotate(${secondsDegrees}deg)`;
 
   const minutesDegrees = (minutes / 60) * 360 + (seconds / 60) * 6 + 90;
